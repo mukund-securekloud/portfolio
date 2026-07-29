@@ -6,7 +6,7 @@ const projects = [
 
     website: "https://www.docugenieai.com/",
 
-    role: "Backend Developer Intern",
+    role: "Backend Developer ",
 
     about:
       "DocuGenie AI is SecureKloud Technologies' AI-powered Intelligent Document Automation platform that helps enterprises automate document-heavy workflows. The platform processes invoices, bank statements, KYC documents, contracts, property documents, and other business files using OCR, AI, and Large Language Models (LLMs).",
@@ -40,7 +40,7 @@ const projects = [
 
     subtitle: "Enterprise HR & Employee Management System",
 
-    role: "Full Stack Developer Intern",
+    role: "Full Stack Developer ",
 
     about:
       "The SecureKloud Intranet Portal is an internal enterprise application used by employees to manage HR operations, employee requests, announcements, events, and internal communication across the organization.",

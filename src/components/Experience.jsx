@@ -54,7 +54,7 @@ export default function Experience() {
               </h3>
 
               <p className="text-blue-400 font-medium">
-                Backend & Full Stack Developer Intern
+                Backend & Full Stack Developer 
               </p>
 
               <p className="text-slate-400">

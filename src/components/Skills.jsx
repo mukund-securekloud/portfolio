@@ -3,11 +3,16 @@ import {
   FaPython,
   FaReact,
   FaNodeJs,
-  FaAws,
   FaGitAlt,
   FaDatabase,
+  FaAws,
 } from "react-icons/fa";
-import { SiFlask, SiMongodb, SiMysql, SiPostgresql } from "react-icons/si";
+
+import {
+  SiFlask,
+  SiMongodb,
+  SiMysql,
+} from "react-icons/si";
 
 const skills = [
   { name: "Python", icon: <FaPython />, level: 95 },
@@ -17,7 +22,9 @@ const skills = [
   { name: "MongoDB", icon: <SiMongodb />, level: 85 },
   { name: "MySQL", icon: <SiMysql />, level: 90 },
 
-  { name: "AWS", icon: <FaAws />, level: 70 },
+  { name: "AWS EC2", icon: <FaAws />, level: 75 },
+  { name: "AWS S3", icon: <FaAws />, level: 75 },
+
   { name: "Git", icon: <FaGitAlt />, level: 90 },
   { name: "REST API", icon: <FaDatabase />, level: 95 },
 ];
@@ -29,6 +36,7 @@ export default function Skills() {
         <motion.h2
           initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
           className="text-5xl font-bold text-center mb-16"
         >
           Skills
@@ -46,10 +54,10 @@ export default function Skills() {
                   <span className="text-blue-400 text-2xl">
                     {skill.icon}
                   </span>
-                  {skill.name}
+                  <span>{skill.name}</span>
                 </div>
 
-                <span>{skill.level}%</span>
+                <span className="font-semibold">{skill.level}%</span>
               </div>
 
               <div className="w-full h-3 bg-slate-800 rounded-full overflow-hidden">
