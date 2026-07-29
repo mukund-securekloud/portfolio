@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
+import profile from "../assets/profile.jpg";
+
 import {
   FaGithub,
   FaLinkedin,
@@ -142,9 +144,13 @@ export default function Hero() {
 
             <div className="absolute inset-0 rounded-full bg-blue-500 blur-3xl opacity-30"></div>
 
-            <div className="relative h-80 w-80 rounded-full border-4 border-blue-500 bg-slate-900 flex items-center justify-center text-8xl shadow-2xl hover:scale-105 transition-all duration-500">
-              👨‍💻
-            </div>
+            <div className="relative h-80 w-80 rounded-full overflow-hidden border-4 border-blue-500 shadow-2xl hover:scale-105 transition-all duration-500">
+  <img
+    src={profile}
+    alt="Mukund Chinnam"
+    className="w-full h-full object-cover"
+  />
+</div>
 
           </div>
         </motion.div>
